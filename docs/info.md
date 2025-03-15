@@ -9,12 +9,13 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This module is capturing high edges in input lines (triggers) and stores the timestamp when this happened.
+Period of internal counter is order of 30ms (24b).
 
 ## How to test
 
-Explain how to use your project
+Just hope that this works.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+None.
