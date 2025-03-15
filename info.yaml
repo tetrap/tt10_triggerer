@@ -23,9 +23,9 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "" # "DAT_CLK"
-  ui[1]: "" # "DAT_ENA"
-  ui[2]: "" # "TRIGG_0"
+  ui[0]: "DAT_CLK"
+  ui[1]: "DAT_ENA"
+  ui[2]: "TRIGG_0"
   ui[3]: ""
   ui[4]: ""
   ui[5]: ""
@@ -33,8 +33,8 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "" # "DAT_RDY"
-  uo[1]: "" # "DAT_OUT"
+  uo[0]: "DAT_RDY"
+  uo[1]: "DAT_OUT"
   uo[2]: ""
   uo[3]: ""
   uo[4]: ""
