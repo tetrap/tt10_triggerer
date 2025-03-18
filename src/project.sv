@@ -178,7 +178,6 @@ endmodule
 module single_channel_with_buffer#(
   parameter OUT_WORD_WIDTH = 24,
   parameter CNT_WIDTH = 24,
-  parameter MEM_WIDTH = 24,
   parameter NUM_MEM_CELLS = 4
 )(
   input wire clk,
@@ -252,7 +251,6 @@ module triggerer(
   single_channel_with_buffer#(
     .OUT_WORD_WIDTH(OUT_WORD_WIDTH),
     .CNT_WIDTH(CNT_WIDTH),
-    .MEM_WIDTH(OUT_WORD_WIDTH),
     .NUM_MEM_CELLS(NUM_MEM_CELLS)
   )trigg_channel(
     .clk(clk),
@@ -324,5 +322,5 @@ module tt_um_tetrap_triggerer (
   );
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, 1'b0};
+  wire _unused = &{&ui_in, &uio_in, ena, 1'b0};
 endmodule
