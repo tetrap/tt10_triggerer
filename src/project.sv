@@ -277,9 +277,6 @@ module triggerer(
 
     .tx_dat(DAT_OUT)
   );
-
-  assign DAT_RDY = 0;
-
 endmodule
 
 module tt_um_tetrap_triggerer (
